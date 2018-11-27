@@ -12,6 +12,9 @@ All information about upcoming events is in issues
 
 [![Telegram](https://img.shields.io/badge/supported%20by-VLDC-522c7a.svg)](https://vldc.org/)
 
+## Who are We Waiting for, or Can I Join?
+Literally, anyone, independently from place of work, place of living, sex, preferences or religion. Js - is all that matters. There are two rules only: respect others and don't forget to pay for yourself in pub
+
 ## A note about beer :beers:
 
 BeerJS is about creating social spaces to strengthen software communities. There is no requirement to drink to participate.
