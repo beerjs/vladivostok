@@ -8,6 +8,8 @@ You can subscribe to notification by pressing Watch :eye: (Stars :star: are welc
 
 All information about upcoming events is in issues
 
+[beerjs-vl.ru](http://beerjs-vl.ru/)
+
 [![Telegram](https://img.shields.io/badge/supported%20by-VLDC-522c7a.svg)](https://vldc.org/)
 
 ## A note about beer :beers:
