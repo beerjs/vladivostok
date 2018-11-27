@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/manifest/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/manifest/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/manifest/favicon-16x16.png">
+    <link rel="manifest" href="assets/manifest/site.webmanifest">
+    <link rel="mask-icon" href="assets/manifest/safari-pinned-tab.svg" color="#643c96">
+    <meta name="msapplication-TileColor" content="#643c96">
+    <meta name="theme-color" content="#ffffff">
+    <title>BeerJS Vladivostok</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .beerjs-title {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fbde34;
+        }
+
+        .beerjs {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(67, 44, 124);
+        }
+
+        #small-bubble-1 {
+            animation-duration: 10s;
+            animation-name: small-bubble-movement;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        #small-bubble-2 {
+            animation-duration: 6s;
+            animation-delay: 2s;
+            animation-name: small-bubble-movement;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        #small-bubble-3 {
+            animation-duration: 8s;
+            animation-delay: 2s;
+            animation-name: small-bubble-movement;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        #big-bubble {
+            animation-duration: 10s;
+            animation-name: big-bubble-movement;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes small-bubble-movement {
+            0% {
+                transform: translateY(0) translateX(0);
+            }
+
+            10% {
+                transform: translateY(-15px) translateX(5px);
+            }
+
+            20% {
+                transform: translateY(-30px) translateX(-5px);
+            }
+
+            30% {
+                transform: translateY(-45px) translateX(5px);
+            }
+
+            40% {
+                transform: translateY(-60px) translateX(-5px);
+            }
+
+            50% {
+                transform: translateY(-75px) translateX(5px);
+            }
+
+            60% {
+                transform: translateY(-90px) translateX(-5px);
+            }
+
+            70% {
+                transform: translateY(-105px) translateX(5px);
+            }
+
+            80% {
+                transform: translateY(-120px) translateX(-5px);
+            }
+
+            90% {
+                transform: translateY(-135px) translateX(5px);
+            }
+
+            100% {
+                transform: translateY(-150px) translateX(-5px);
+            }
+        }
+
+        @keyframes big-bubble-movement {
+            0% {
+                transform: translateY(0) translateX(0);
+            }
+
+            20% {
+                transform: translateY(-15px) translateX(5px);
+            }
+
+            40% {
+                transform: translateY(-30px) translateX(-5px);
+            }
+
+            60% {
+                transform: translateY(-45px) translateX(5px);
+            }
+
+            80% {
+                transform: translateY(-60px) translateX(-5px);
+            }
+
+            100% {
+                transform: translateY(-75px) translateX(5px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+<main class="beerjs">
+    <div class="beerjs-container">
+        <svg width="289" height="387" viewBox="0 0 289 387" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M284.127 48.1226C284.211 47.6178 284.295 47.113 284.295 46.6083C284.295 29.5298 219.186 4.62717 146.348 4.62717C73.5102 4.62717 4.70466 28.2678 4.70466 45.3463C4.70466 45.8511 4.78867 46.3559 4.87268 46.8606L45.0302 328.193H45.1143C45.1143 328.613 45.0302 329.034 45.0302 329.455C45.0302 358.732 90.3965 382.457 146.348 382.457C202.3 382.457 247.666 358.732 247.666 329.455C247.666 329.034 247.582 328.613 247.582 328.193H247.666L284.127 48.1226V48.1226Z"
+                  fill="#B5CDE3"></path>
+            <path d="M48.8948 165.4L70.5698 326.005C70.5698 326.005 77.1227 337.7 80.7352 339.635C91.5727 345.271 112.744 355.283 146.432 354.694C191.378 353.937 218.094 337.615 218.094 337.615L225.319 326.342L246.406 158.418L48.8948 165.4V165.4Z"
+                  fill="#FBDE34"></path>
+            <path d="M39.6535 86.3178C42.7619 80.5128 48.1387 72.5204 54.3555 68.7346C60.5724 64.9487 99.3858 52.4974 149.709 52.918C199.948 53.3387 239.433 67.725 245.23 74.1189C251.027 80.5128 255.731 92.88 255.731 92.88L246.406 158.418C246.406 158.418 237.501 164.559 227.251 167.924C217.002 171.29 188.27 168.597 179.785 172.299C171.3 175.917 147.272 188.957 147.272 188.957C147.272 188.957 125.513 206.372 102.578 201.324C88.0442 198.211 73.0901 172.131 62.8407 171.374C54.8596 170.785 49.7349 168.093 49.7349 168.093C49.7349 168.093 36.5451 92.1228 39.6535 86.3178Z"
+                  fill="white"></path>
+            <path id="small-bubble-1"
+                  d="M178 327.5C178 331.069 174.444 334 170 334C165.556 334 162 331.069 162 327.5C162 323.931 165.556 321 170 321C174.444 321 178 323.931 178 327.5Z"
+                  fill="white"></path>
+            <path id="small-bubble-2"
+                  d="M207 299.5C207 303.069 203.444 306 199 306C194.556 306 191 303.069 191 299.5C191 295.931 194.556 293 199 293C203.444 293 207 295.931 207 299.5Z"
+                  fill="white"></path>
+            <path id="small-bubble-3"
+                  d="M116.171 329.581C116.171 334.293 111.466 338.163 105.585 338.163C99.7047 338.163 95 334.293 95 329.581C95 324.87 99.7047 321 105.585 321C111.466 321 116.171 324.87 116.171 329.581Z"
+                  fill="white"></path>
+            <path id="big-bubble"
+                  d="M85.1878 243.137C96.8654 243.137 106.359 235.649 106.359 226.395C106.359 217.141 96.9494 209.737 85.1878 209.653C73.5102 209.653 64.0169 217.141 64.0169 226.395C64.0169 235.649 73.5102 243.137 85.1878 243.137Z"
+                  fill="white"></path>
+            <path d="M75.8625 320.2L91.8247 310.525C94.9331 315.994 97.7055 320.621 104.426 320.621C110.895 320.621 114.928 318.097 114.928 308.338V241.707H134.419V308.59C134.419 328.866 122.573 338.12 105.183 338.12C89.5564 338.12 80.4831 329.96 75.8625 320.2V320.2ZM145.088 318.097L161.05 308.843C165.251 315.742 170.712 320.705 180.373 320.705C188.438 320.705 193.647 316.667 193.647 311.03C193.647 304.3 188.354 301.944 179.365 297.99L174.492 295.887C160.378 289.914 151.053 282.342 151.053 266.357C151.053 251.634 162.226 240.445 179.701 240.445C192.135 240.445 201.124 244.82 207.509 256.093L192.303 265.852C188.942 259.879 185.33 257.439 179.701 257.439C173.988 257.439 170.376 261.057 170.376 265.852C170.376 271.741 173.988 274.097 182.389 277.715L187.262 279.818C203.896 286.969 213.222 294.204 213.222 310.61C213.222 328.277 199.36 337.868 180.793 337.868C162.562 338.12 150.801 329.455 145.088 318.097"
+                  fill="#343433"></path>
+        </svg>
+        <h1 class="beerjs-title">BeerJS Vladivostok</h1>
+    </div>
+</main>
+</body>
+
+</html>
