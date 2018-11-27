@@ -1,5 +1,7 @@
 # BeerJS Vladivostok
 
+![BeerJS Vladivostok](assets/beerjs-tiger.svg)
+
 The legendary frontend meetup is now in Vladivostok!
 
 [![Telegram](https://img.shields.io/badge/supported%20by-VLDC-522c7a.svg)](https://vldc.org/)
